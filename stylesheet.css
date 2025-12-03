@@ -9,21 +9,40 @@
       box-sizing: border-box; /* ændre hitbox når man kommer en border på billeder og tekst */
     }
 
-/* Slu på Body */
+/* Slut på Body */
 
 /* Navigationslinje */
 
-    #navigations-linje {
+    #menu-linje {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        background-color: antiquewhite;
+        width: 1000px;
     }
 
-    #logo-knap {
-        color: brown;
-        justify-content: start;
+    .menu-element {
+        padding: 20px;
+        font-size: 15px;
+        font-family: 'Lucida Sans';
+        font-weight: bold;
     }
 
+    .logo-menu-element {
+        padding: 20px;
+        font-size: 15px;
+        font-family: 'Lucida Sans';
+        font-weight: bold;
+        margin-right: 380px; /* Logo til venstre af siden */
+    }
 
+    .menu-link {
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu-link:hover {
+        color: rgb(147, 147, 147);
+    }
 
 /* Slut på Navigationslinje */
