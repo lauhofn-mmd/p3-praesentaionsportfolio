@@ -1,0 +1,29 @@
+/* Body Layout */ 
+    body {
+        margin: auto;
+        margin-top: 20px;
+        max-width: 1000px;
+    }
+
+    * {
+      box-sizing: border-box; /* ændre hitbox når man kommer en border på billeder og tekst */
+    }
+
+/* Slu på Body */
+
+/* Navigationslinje */
+
+    #navigations-linje {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #logo-knap {
+        color: brown;
+        justify-content: start;
+    }
+
+
+
+/* Slut på Navigationslinje */
