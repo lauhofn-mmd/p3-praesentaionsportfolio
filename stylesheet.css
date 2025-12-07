@@ -46,3 +46,27 @@
 
 /* Slut på Navigationslinje */
 
+
+
+/* Prøve Grid navigation */
+
+    .nav-grid-container { /* Hele grid containeren */
+        display: grid;
+        grid-template-columns: 180px auto 110px 110px 110px;  /* Laver fire kolonner med tilpasset bredde */
+        background-color: red;                     /* Laver baggrundsfarven for hele containeren */
+        padding: 25px 5px 25px 5px;                               /* Padding for hele containeren */
+    }
+
+    .nav-grid-container div { /* Elementer (kasser) inde i grid container */
+        background-color: #D8DAD3;       /* baggrundsfarve på kasser i container */
+        border: solid 1px;                 /* border om container elementer - slet senere */
+        padding: 10px;                     /* padding i container elementer/kasser */
+        font-size: 15px;
+        font-family: 'Lucida Sans';
+        text-align: center;
+        
+    }
+
+
+/* Prøve Grid navigation */
+
