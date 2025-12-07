@@ -8,65 +8,44 @@
       box-sizing: border-box; /* ændre hitbox når man kommer en border på billeder og tekst */
     }
 
+
 /* Slut på Body */
 
 /* Navigationslinje */
 
-    #menu-linje {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        background-color: #D8DAD3;
+    .nav-grid-container .logo-home-button {
+        float: left;
+        width: 40px;
+        height: 40px;
+        padding: 3px;
     }
-
-    .menu-element {
-        padding: 30px 25px 30px 25px;
-        font-size: 15px;
-        font-family: 'Lucida Sans';
-        font-weight: 500;
-    }
-
-    .logo-menu-element {
-        color: #4A4B56;
-        padding: 30px 25px 30px 25px;
-        font-size: 17px;
-        font-family: 'Lucida Sans';
-        font-weight: bolder;
-        margin-right: 680px; /* Logo til venstre af siden */
-    }
-
-    .menu-link {
-        color: #4A4B56;
-        text-decoration: none;
-    }
-
-    .menu-link:hover {
-        text-decoration: underline;
-    }
-
-/* Slut på Navigationslinje */
-
-
-
-/* Prøve Grid navigation */
 
     .nav-grid-container { /* Hele grid containeren */
         display: grid;
-        grid-template-columns: 180px auto 110px 110px 110px;  /* Laver fire kolonner med tilpasset bredde */
-        background-color: red;                     /* Laver baggrundsfarven for hele containeren */
-        padding: 25px 5px 25px 5px;                               /* Padding for hele containeren */
+        grid-template-columns: 200px auto 110px 110px 110px;  /* Laver fem kolonner med tilpasset bredde */
+        background-color: #D8DAD3;                     /* Laver baggrundsfarven for hele containeren */
+        padding: 25px 10px 25px 10px;                               /* Padding for hele containeren */
     }
 
     .nav-grid-container div { /* Elementer (kasser) inde i grid container */
         background-color: #D8DAD3;       /* baggrundsfarve på kasser i container */
-        border: solid 1px;                 /* border om container elementer - slet senere */
+        /*border: solid 1px; */             /* border om container elementer - slet senere */
         padding: 10px;                     /* padding i container elementer/kasser */
         font-size: 15px;
         font-family: 'Lucida Sans';
         text-align: center;
-        
+    }
+
+    .nav-link {
+        color: #4A4B56;
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
     }
 
 
-/* Prøve Grid navigation */
+/* Slut på Navigationslinje */
+
 
