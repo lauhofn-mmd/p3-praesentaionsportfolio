@@ -1,7 +1,7 @@
 /* Body Layout */ 
     body {
-        margin: auto;
-        background-color: rgb(66, 66, 66); /* Hexkode F1F2EB */
+        margin: 0;
+        background-color: #F1F2EB; /* Hexkode F1F2EB */
     }
 
     * {
@@ -13,37 +13,41 @@
 
 /* Navigationslinje */
 
-    .nav-grid-container .logo-home-button {
-        float: left;
-        width: 40px;
-        height: 40px;
-        padding: 3px;
+    .nav-container {  /* Navigation container */
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #DADAD0;
+        position: fixed;   /* Fixed navigation i venstre side */
+        height: 100%;      /* Den fylder hele siden */
+        overflow: auto;
     }
 
-    .nav-grid-container { /* Hele grid containeren */
-        display: grid;
-        grid-template-columns: 200px auto 110px 110px 110px;  /* Laver fem kolonner med tilpasset bredde */
-        background-color: #D8DAD3;                     /* Laver baggrundsfarven for hele containeren */
-        padding: 25px 10px 25px 10px;                               /* Padding for hele containeren */
-    }
-
-    .nav-grid-container div { /* Elementer (kasser) inde i grid container */
-        background-color: #D8DAD3;       /* baggrundsfarve på kasser i container */
-        /*border: solid 1px; */             /* border om container elementer - slet senere */
-        padding: 10px;                     /* padding i container elementer/kasser */
-        font-size: 15px;
+    .nav-container div {  /* Navigation kasser i container */
         font-family: 'Lucida Sans';
         text-align: center;
+        padding: 15px;
     }
 
-    .nav-link {
-        color: #4A4B56;
-        text-decoration: none;
-    }
+    /* Links i navigation */
+        .nav-container div a { /* Links i navigation */
+            color: #4A4B56;
+            font-size: 15px;
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+        }
 
-    .nav-link:hover {
-        text-decoration: underline;
-    }
+        .nav-container div a:hover {
+            text-decoration: underline;
+        }
+
+        #nav-logo {
+            width: 40px;
+            height: 40px;
+        }
+    /* Links i navigation */
 
 
 /* Slut på Navigationslinje */
