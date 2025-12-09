@@ -13,10 +13,12 @@
 
 /* Media Query */
 
-    /* On screens that are 700px wide or less, make the columns stack on top of each other instead of next to each other */
-    @media (max-width: 600px) {
-     .nav-container { /* Ændre Navigation fra Row til Column når siden er mindre end 700px */
-      flex-direction: column;
+    
+    @media (max-width: 400px) {
+     .nav-container { /* Ændre Navigation fra Row til Column når siden er mindre end 600px */
+        background-color: #f0f04f;
+        height: 50px;
+        width: auto;
       }
     }
 
