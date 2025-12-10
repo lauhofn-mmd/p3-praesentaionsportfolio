@@ -1,6 +1,7 @@
 /* Body Layout */ 
     body {
         margin: 0;
+        font-family: 'Lucida Sans';
         background-color: #F1F2EB; /* Hexkode F1F2EB */
     }
 
@@ -15,11 +16,7 @@
 
     
     @media (max-width: 400px) {
-     .nav-container { /* Ændre Navigation fra Row til Column når siden er mindre end 600px */
-        background-color: #f0f04f;
-        height: 50px;
-        width: auto;
-      }
+     
     }
 
 /* Slut på Media Query */
@@ -32,22 +29,23 @@
         margin: 0;
         padding: 0;
         width: 200px;
-        background-color: #DADAD0;
+        background-color: #4A4B56;
         position: fixed;   /* Fixed navigation i venstre side */
         height: 100%;      /* Den fylder hele siden */
         overflow: auto;
     }
 
     .nav-container div {  /* Navigation kasser i container */
-        font-family: 'Lucida Sans';
         text-align: center;
         padding: 15px;
+        border: solid 1px;
     }
 
     /* Links i navigation */
         .nav-container div a { /* Links i navigation */
-            color: #4A4B56;
+            color: #EFEEE7;
             font-size: 15px;
+            /* font-weight: ; */
             display: block;
             padding: 5px;
             text-decoration: none;
@@ -57,13 +55,42 @@
             text-decoration: underline;
         }
 
+        #logo-knap:hover /* FIX LOGO KNAP SENERE -----------------!! */
+
         #nav-logo {
             width: 40px;
             height: 40px;
         }
+
+        .nav-container h1 {
+            font-weight: lighter;
+            font-size: 30px;
+            color: #EFEEE7;
+            margin: 1px;
+        }
+        
+        .nav-container h2 {
+            font-weight: lighter;
+            font-size: 20px;
+            color: #EFEEE7;
+            margin: 1px;
+        }
+        
+
+
     /* Links i navigation */
 
 
 /* Slut på Navigationslinje */
 
+
+/* Main content side */
+
+
+
+
+
+
+
+/* Slut på Main content side */
 
