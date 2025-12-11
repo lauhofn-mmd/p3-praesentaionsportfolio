@@ -7,6 +7,7 @@
         margin: 0;
         background-color: #EFEEE7;  
         font-family: 'Lucida Sans';
+        max-width: 600px;
     }
 
     .menu {grid-area: menu;}
@@ -19,7 +20,7 @@
 /* Grid container */
 
     .grid-container > * {
-        border: solid 1px;
+        /* border: solid 1px; */
         text-align: center;
         font-size: 16px;
     }
@@ -47,7 +48,7 @@
             font-size: 15px;
             /* font-weight: ; */
             display: block;
-            padding: 10px;
+            padding: 15px 10px 15px 10px;
             text-decoration: none;
         }
 
@@ -58,14 +59,12 @@
         .menu h1 {
             font-weight: lighter;
             font-size: 30px;
-            color: #EFEEE7;
             margin: 1px;
         }
         
         .menu h2 {
             font-weight: lighter;
             font-size: 20px;
-            color: #EFEEE7;
             margin: 1px;
         }
 
@@ -82,18 +81,15 @@
             margin: 5px;
         }
 
-       /* .menu-soMe-container {    Sociale Medier ikoner og links til senere
-            content: "";
-            clear: both;
-            display: table;
-
+        .menu-soMe-container {   /* Sociale Medier ikoner og links til senere */
+            display: flex;
+            justify-content: flex-start;
         }   
 
         .soMe-container {
-            float: center;
-            width: 10%;
-            padding: 3px;
-        } */
+            padding: 1px;
+
+        }
 
     /* Slut på menu */
 
@@ -104,9 +100,23 @@
             color: #4A4B56;
         }
 
+        .main-title-pic {
+            height: 300px;
+            width: 530px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
         .main-content {
             text-align: left;
+            background-color: #DADAD0;
+            height: 300px;
+            width: 530px;
+            margin: 10px;
+            border-radius: 5px;          
         }
+
+        
 
     /* Slut på Main */
 
@@ -123,18 +133,32 @@
 /* Grid container */
 
 
-@media (min-width: 600px) {
-    .grid-container {
-        grid-template-areas: 
-        "menu main" /* Hvordan tabellen er sat op i webpage */
-        "menu main"     /* Forestil dig teksten i en 2x3 tabel */
-        "footer footer";
+/* Media Query for PC Skærm */
 
-        grid-template-columns: 200px auto; /* Størrelserne på kasserne og 'tabellen' */
-        grid-template-rows: auto auto 100px;
-        height: 100vh;
+    @media (min-width: 600px) {
+        .grid-container {
+            grid-template-areas: 
+            "menu main"       /* Hvordan tabellen er sat op i webpage */
+            "menu main"       /* Forestil dig teksten i en 2x3 tabel */
+            "footer footer";
+
+            grid-template-columns: 200px auto; /* Størrelserne på kasserne og 'tabellen' */
+            grid-template-rows: auto auto 100px;
+            height: 100vh;
+        }
+
+        body {
+            max-width: 1410px;  /* PC skærm */
+        }
+
+        .main-title-pic {
+            height: 400px;
+            width: 1100px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
     }
 
-}
-
+/* Slut på Media Query for PC Skærm */
    
