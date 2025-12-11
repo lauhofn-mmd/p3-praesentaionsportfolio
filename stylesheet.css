@@ -1,96 +1,140 @@
-/* Body Layout */ 
+
+/* Start på CSS layout */
+
+/* Start på Body */
+
     body {
         margin: 0;
+        background-color: #EFEEE7;  
         font-family: 'Lucida Sans';
-        background-color: #F1F2EB; /* Hexkode F1F2EB */
     }
 
-    * {
-      box-sizing: border-box; /* ændre hitbox når man kommer en border på billeder og tekst */
-    }
-
+    .menu {grid-area: menu;}
+    .main {grid-area: main;}
+    .footer {grid-area: footer;}
 
 /* Slut på Body */
 
-/* Media Query */
 
-    
-    @media (max-width: 400px) {
-     
-    }
+/* Grid container */
 
-/* Slut på Media Query */
-
-
-/* Navigationslinje */
-
-    .nav-container {  /* Navigation container */
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        background-color: #4A4B56;
-        position: fixed;   /* Fixed navigation i venstre side */
-        height: 100%;      /* Den fylder hele siden */
-        overflow: auto;
-    }
-
-    .nav-container div {  /* Navigation kasser i container */
-        text-align: center;
-        padding: 15px;
+    .grid-container > * {
         border: solid 1px;
+        text-align: center;
+        font-size: 16px;
     }
 
-    /* Links i navigation */
-        .nav-container div a { /* Links i navigation */
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+            "menu menu" /* Hvordan tabellen er sat op i webpage */
+            "main main"     /* Forestil dig teksten i en 3x3 tabel */
+            "footer footer";
+        
+        grid-gap: 0;   
+        padding: 0; 
+    }
+
+
+    /* Start på menu */
+        .menu {
+            padding-top: 15px;
+            background-color: #4A4B56;
+        }
+
+        .menu a {
             color: #EFEEE7;
             font-size: 15px;
             /* font-weight: ; */
             display: block;
-            padding: 5px;
+            padding: 10px;
             text-decoration: none;
         }
 
-        .nav-container div a:hover {
+        .menu a:hover {
             text-decoration: underline;
         }
 
-        #logo-knap:hover /* FIX LOGO KNAP SENERE -----------------!! */
-
-        #nav-logo {
-            width: 40px;
-            height: 40px;
-        }
-
-        .nav-container h1 {
+        .menu h1 {
             font-weight: lighter;
             font-size: 30px;
             color: #EFEEE7;
             margin: 1px;
         }
         
-        .nav-container h2 {
+        .menu h2 {
             font-weight: lighter;
             font-size: 20px;
             color: #EFEEE7;
             margin: 1px;
         }
-        
+
+        #CTA-knap {
+            border: none;
+            background-color: #EFEEE7;
+            color: #4A4B56;
+            padding: 10px 13px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 5px;
+        }
+
+       /* .menu-soMe-container {    Sociale Medier ikoner og links til senere
+            content: "";
+            clear: both;
+            display: table;
+
+        }   
+
+        .soMe-container {
+            float: center;
+            width: 10%;
+            padding: 3px;
+        } */
+
+    /* Slut på menu */
+
+    /* Start på Main */
+
+        .main {
+            background-color: #EFEEE7;
+            color: #4A4B56;
+        }
+
+        .main-content {
+            text-align: left;
+        }
+
+    /* Slut på Main */
+
+    /* Start på footer*/
+
+        .footer {
+            background-color: #CDB793;
+            color: #EFEEE7;
+        }
+
+    /* Start på footer*/
 
 
-    /* Links i navigation */
+/* Grid container */
 
 
-/* Slut på Navigationslinje */
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-areas: 
+        "menu main" /* Hvordan tabellen er sat op i webpage */
+        "menu main"     /* Forestil dig teksten i en 2x3 tabel */
+        "footer footer";
 
+        grid-template-columns: 200px auto; /* Størrelserne på kasserne og 'tabellen' */
+        grid-template-rows: auto auto 100px;
+        height: 100vh;
+    }
 
-/* Main content side */
+}
 
-
-
-
-
-
-
-/* Slut på Main content side */
-
+   
