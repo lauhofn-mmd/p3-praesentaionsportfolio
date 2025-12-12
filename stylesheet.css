@@ -69,16 +69,14 @@
         }
 
         #CTA-knap {
-            border: none;
-            background-color: #EFEEE7;
-            color: #4A4B56;
-            padding: 10px 13px;
+            padding: 10px;
             border-radius: 10px;
-            text-align: center;
-            text-decoration: none;
             display: inline-block;
-            font-size: 15px;
             margin: 5px;
+        }
+
+        .menu img {
+            height: 40px;
         }
 
         .menu-soMe-container {   /* Sociale Medier ikoner og links til senere */
@@ -120,6 +118,10 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 color: #EFEEE7;
+            }
+
+            .title-text h1 {
+                font-size: 30px;
             }
         /* Slut på Cover billeder på forside */
 
@@ -167,14 +169,26 @@
             height: 100%;
         }
 
+        .menu img {
+            height: 50px;
+        }
+
         .main-title-pic {
            height: 400px;
            background-position: center;
            background-repeat: no-repeat;
            background-size: cover;
            position: relative;
-           margin: 30px;
+           margin: 20px 30px;
            border-radius: 20px;
+        }
+
+        .title-text h1 {
+            font-size: 50px;
+        }
+
+        .title-text h3 {
+            font-size: 30px;
         }
 
     }
