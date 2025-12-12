@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 /* Start på CSS layout */
 
 /* Start på Body */
@@ -68,26 +68,18 @@
             margin: 1px;
         }
 
-        #CTA-knap {
-            padding: 10px;
-            border-radius: 10px;
-            display: inline-block;
-            margin: 5px;
-        }
-
-        .menu img {
+        .menu img {   /* Logo i navigation */
             height: 40px;
+            border-radius: 5px;
+
+            transition-property: height; /* Hover animation property */
+            transition-duration: 0.5s; /* Hvor lang tid skal de tage at ændre height */
         }
 
-        .menu-soMe-container {   /* Sociale Medier ikoner og links til senere */
-            display: flex;
-            justify-content: flex-start;
-        }   
-
-        .soMe-container {
-            padding: 1px;
-
+        .menu img:hover {
+            height: 43px;
         }
+
 
     /* Slut på menu */
 
@@ -118,6 +110,18 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 color: #EFEEE7;
+            }
+
+            .title-text h3 a {
+                text-decoration: none;
+                color: #EFEEE7;
+                font-size: 17px;
+                transition-property: font-size; /* Hover animation property */
+                transition-duration: 0.5s; /* Hvor lang tid skal de tage at ændre height */
+            }
+
+            .title-text h3 a:hover {
+                font-size: 18px;
             }
 
             .title-text h1 {
@@ -170,8 +174,17 @@
         }
 
         .menu img {
-            height: 50px;
+            height: 40px;
+            border-radius: 5px;
+
+            transition-property: height; /* Hover animation property */
+            transition-duration: 0.5s; /* Hvor lang tid skal de tage at ændre height */
         }
+
+        .menu img:hover {
+            height: 43px;
+        }
+        
 
         .main-title-pic {
            height: 400px;
@@ -189,6 +202,18 @@
 
         .title-text h3 {
             font-size: 30px;
+        }
+
+        .title-text h3 a {
+            text-decoration: none;
+            color: #EFEEE7;
+            font-size: 23px;
+            transition-property: font-size; /* Hover animation property */
+            transition-duration: 0.5s; /* Hvor lang tid skal de tage at ændre height */
+        }
+
+        .title-text h3 a:hover {
+            font-size: 24px;
         }
 
     }
