@@ -10,7 +10,7 @@
         max-width: 600px;
     }
 
-    .menu {grid-area: menu;}
+    .menu {grid-area: menu;}   /* Erklæring af grid areas */
     .main {grid-area: main;}
     .footer {grid-area: footer;}
 
@@ -19,7 +19,7 @@
 
 /* Grid container */
 
-    .grid-container > * {
+    .grid-container > * {         /* Property på hele grid container */
         /* border: solid 1px; */
         text-align: center;
         font-size: 16px;
@@ -28,8 +28,8 @@
     .grid-container {
         display: grid;
         grid-template-areas: 
-            "menu menu" /* Hvordan tabellen er sat op i webpage */
-            "main main"     /* Forestil dig teksten i en 3x3 tabel */
+            "menu menu"      /* Hvordan tabellen er sat op i webpage */
+            "main main"      /* Forestil dig teksten i en 2x3 tabel */
             "footer footer";
         
         grid-gap: 0;   
@@ -98,23 +98,24 @@
         .main {
             background-color: #EFEEE7;
             color: #4A4B56;
+            height: 1000px;
+        }
+
+        .main-content {  /* Hvid boks i baggrunden */
+            background-color: #DADAD0;
+            margin: 20px;
+            border-radius: 15px;
+            height: 500px;
         }
 
         .main-title-pic {
             height: 300px;
-            width: 530px;
+            width: 520px;
             margin: 10px;
             border-radius: 5px;
         }
 
-        .main-content {
-            text-align: left;
-            background-color: #DADAD0;
-            height: 300px;
-            width: 530px;
-            margin: 10px;
-            border-radius: 5px;          
-        }
+        
 
         
 
@@ -138,8 +139,8 @@
     @media (min-width: 600px) {
         .grid-container {
             grid-template-areas: 
-            "menu main"       /* Hvordan tabellen er sat op i webpage */
-            "menu main"       /* Forestil dig teksten i en 2x3 tabel */
+            "menu main"          /* Hvordan tabellen er sat op i webpage */
+            "menu main"          /* Forestil dig teksten i en 2x3 tabel */
             "footer footer";
 
             grid-template-columns: 200px auto; /* Størrelserne på kasserne og 'tabellen' */
@@ -149,6 +150,15 @@
 
         body {
             max-width: 1410px;  /* PC skærm */
+        }
+
+        .menu {  /* Fixed side navigation */
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
         }
 
         .main-title-pic {
