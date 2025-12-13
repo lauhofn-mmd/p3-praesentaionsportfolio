@@ -83,7 +83,7 @@
 
     /* Slut på menu */
 
-    /* Start på Main */
+    /* Start på MAIN I HOMEPAGE */
 
         .main {
             background-color: #EFEEE7;
@@ -116,12 +116,6 @@
                 text-decoration: none;
                 color: #EFEEE7;
                 font-size: 17px;
-                transition-property: font-size; /* Hover animation property */
-                transition-duration: 0.5s; /* Hvor lang tid skal de tage at ændre height */
-            }
-
-            .title-text h3 a:hover {
-                font-size: 18px;
             }
 
             .title-text h1 {
@@ -131,13 +125,51 @@
 
         
 
-    /* Slut på Main */
+    /* Slut på MAIN I HOMEPAGE */
+
+
+    /* START PÅ PORTFOLIO SIDE CSS */
+
+        .color-background { /* Baggrund bag portfolio containers */
+            background-color: #DADAD0;
+        }
+
+        #portfolio-container { /* Selve containeren rundt om containers */
+            display: grid;
+            gap: 40px;
+            border-top: solid #DADAD0 30px;
+            border-bottom: solid #DADAD0 30px;
+        }
+
+        #portfolio-container div { /* Alle de små containere */
+            text-align: left;
+            margin: 0 10px 0 10px;
+            background-color: #EFEEE7;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        #portfolio-container img {
+            margin: 30px;
+            display: block;
+            width: 85%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+
+
+    /* START PÅ PORTFOLIO SIDE CSS */
+
 
     /* Start på footer*/
 
         .footer {
             background-color: #CDB793;
             color: #EFEEE7;
+            position: fixed;
+            bottom: 0;
         }
 
     /* Start på footer*/
@@ -187,7 +219,7 @@
         
 
         .main-title-pic {
-           height: 400px;
+           height: 380px;
            background-position: center;
            background-repeat: no-repeat;
            background-size: cover;
@@ -208,12 +240,6 @@
             text-decoration: none;
             color: #EFEEE7;
             font-size: 23px;
-            transition-property: font-size; /* Hover animation property */
-            transition-duration: 0.5s; /* Hvor lang tid skal de tage at ændre height */
-        }
-
-        .title-text h3 a:hover {
-            font-size: 24px;
         }
 
     }
