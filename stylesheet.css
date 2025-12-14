@@ -211,6 +211,56 @@
     /* SLUT PÅ OM MIG SIDE CSS */
 
 
+
+    /* START PÅ OM KONTAKT SIDE CSS */
+
+
+        .kontakt-container {
+            border-radius: 5px;
+            border-top: solid #DADAD0 30px;
+            border-bottom: solid #DADAD0 30px;
+        }
+
+
+        input[type=text], select, textarea {
+            width: 99%;
+            padding: 15px;
+            border: 1px solid #DADAD0;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            resize: vertical;
+        }
+
+        input[type=submit] {   /* Knappen til Send Besked i kontakt formular */
+            background-color: #4A4B56;
+            color: #EFEEE7;
+            font-family: 'Lucida Sans';
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            text-decoration: underline;
+        }   
+        
+
+        #kontakt-formular:after {  /* Clear floats after the columns - UNDERSØG HVAD DET BETYDER*/  
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+
+    /* SLUT PÅ OM KONTAKT SIDE CSS */
+
+
     /* Start på footer*/
 
         .footer {
@@ -307,6 +357,19 @@
 
 
         /* SLUT PÅ PORTFOLIO SIDE */
+
+
+        /* START PÅ KONTAKT SIDE */
+
+        .kontakt-kolonne {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+
+        /* SLUT PÅ KONTAKT SIDE */
 
     }
 
