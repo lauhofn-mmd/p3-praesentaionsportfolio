@@ -192,6 +192,21 @@
     /* START PÅ PORTFOLIO SIDE CSS */
 
 
+    /* START PÅ OM MIG SIDE CSS */
+
+        #om-mig-container {
+            text-align: left;
+            display: grid;
+            margin: 15px 25px 15px 25px;
+        }
+
+        
+
+
+
+    /* SLUT PÅ OM MIG SIDE CSS */
+
+
     /* Start på footer*/
 
         .footer {
