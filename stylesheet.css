@@ -123,20 +123,24 @@
             }
         /* Slut på Cover billeder på forside */
 
-        main button {
+        /* Tilbage Knap Style */
+        .tilbage-knap a:link, a:visited{
+            display: inline-block;
             background-color: #4A4B56;
             color: #EFEEE7;
             font-family: 'Lucida Sans';
             font-size: 14px;
+            text-align: center;
+            text-decoration: none;
             border: none;
-            padding: 10px;
+            padding: 10px 15px;
             border-radius: 10px;
         }
 
-        main button:hover {
+        .tilbage-knap a:hover, a:active {
             text-decoration: underline;
         }
-
+        /* Tilbage Knap Style */
 
         
 
