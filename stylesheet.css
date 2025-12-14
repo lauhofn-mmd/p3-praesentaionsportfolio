@@ -134,6 +134,11 @@
             background-color: #DADAD0;
         }
 
+        #portfolio-tekst {
+            text-align: left;
+            margin: 15px 15px 15px 15px;
+        }
+
         #portfolio-container { /* Selve containeren rundt om containers */
             display: grid;
             gap: 40px;
@@ -158,6 +163,15 @@
             border-radius: 5px;
         }
 
+        #portfolio-container video {
+            margin: 30px;
+            display: block;
+            width: 85%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
 
 
     /* START PÅ PORTFOLIO SIDE CSS */
@@ -168,8 +182,9 @@
         .footer {
             background-color: #CDB793;
             color: #EFEEE7;
-            position: fixed;
             bottom: 0;
+            position: fixed;
+            height: 30px;
         }
 
     /* Start på footer*/
@@ -241,6 +256,23 @@
             color: #EFEEE7;
             font-size: 23px;
         }
+
+        /* START PÅ PORTFOLIO SIDE */
+
+        #portfolio-tekst {
+            text-align: left;
+            margin: 25px 25px 15px 25px;
+        }
+
+        #portfolio-container {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            gap: 15px;
+            margin: 15px;
+        }
+
+
+        /* SLUT PÅ PORTFOLIO SIDE */
 
     }
 
