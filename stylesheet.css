@@ -123,6 +123,21 @@
             }
         /* Slut på Cover billeder på forside */
 
+        main button {
+            background-color: #4A4B56;
+            color: #EFEEE7;
+            font-family: 'Lucida Sans';
+            font-size: 14px;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        main button:hover {
+            text-decoration: underline;
+        }
+
+
         
 
     /* Slut på MAIN I HOMEPAGE */
