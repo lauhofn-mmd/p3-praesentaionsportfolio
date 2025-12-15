@@ -128,13 +128,32 @@
         #home-info-container {
             display: flex;
             flex-direction: column;
-            background-color: #DADAD0;
             margin: 5px 20px 5px 20px;
             border-radius: 10px;
         }
 
         #home-info-container div {
-            padding: 10px;
+            padding: 10px;   
+            margin-bottom: 15px;
+        }
+
+        #home-info-container img {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            object-fit: cover;   /* Giver billede en 'fast' kasse så den ikke kommer over 'rammerne' */
+            
+        }
+
+        .home-info-box {
+            margin-top: 15px;
+        }
+
+        .info-box-tekst {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
         }
 
 
@@ -397,9 +416,14 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                background-color: #DADAD0;
                 margin: 5px 20px 5px 20px;
                 border-radius: 10px;
+                gap: 15px;
+            }
+
+
+            #home-info-container div {
+                padding: 10px;
             }
 
 
