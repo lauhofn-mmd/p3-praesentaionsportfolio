@@ -200,11 +200,38 @@
 
         #om-mig-container {
             text-align: left;
-            display: grid;
+            display: flex;
+            flex-direction: column;
             margin: 15px 25px 15px 25px;
         }
 
-        
+        #om-mig-container img {
+            padding-top: 15px;
+            width: 320px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .skill-container {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            margin: 15px 25px 15px 25px;
+        }
+
+        div.tegne-container {
+            background-color: #DADAD0;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+            max-width: 400px;
+        }
+
+        div.tegne-container img {
+            padding: 5px 10px 5px 10px;
+            width: 200px;
+            height: auto;
+        }        
 
 
 
@@ -370,6 +397,43 @@
 
 
         /* SLUT PÅ KONTAKT SIDE */
+
+
+        /* START PÅ OM MIG SIDE */
+
+            #om-mig-container {
+                text-align: left;
+                display: flex;
+                flex-direction: row-reverse;
+                margin: 15px 25px 15px 25px;
+            }
+
+            #om-mig-container img {
+                padding-top: 15px;
+                width: 270px;
+                height: auto;
+                border-radius: 10px;
+                margin-left: 30px;
+            }
+
+            div.tegne-container {
+                background-color: #DADAD0;
+                overflow: auto;
+                white-space: nowrap;
+                padding: 0 15px 0 15px;
+                max-width: 1150px;
+            }
+
+            div.tegne-container img {
+                padding: 10px;
+                width: 250px;
+                height: auto;
+            }
+
+
+
+        /* SLUT PÅ OM MIG SIDE */
+
 
     }
 
