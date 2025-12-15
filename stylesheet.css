@@ -123,6 +123,24 @@
             }
         /* Slut på Cover billeder på forside */
 
+        /* Start Hjemmeside HOME INFO CONTAINER */
+
+        #home-info-container {
+            display: flex;
+            flex-direction: column;
+            background-color: #DADAD0;
+            margin: 5px 20px 5px 20px;
+            border-radius: 10px;
+        }
+
+        #home-info-container div {
+            padding: 10px;
+        }
+
+
+        /* SLUT PÅ HOME INFO CONTAINER */
+
+
         /* Tilbage Knap Style */
         .tilbage-knap a:link, a:visited{
             display: inline-block;
@@ -200,6 +218,7 @@
 
         #om-mig-container {
             text-align: left;
+            font-size: 17px;
             display: flex;
             flex-direction: column;
             margin: 15px 25px 15px 25px;
@@ -220,11 +239,14 @@
         }
 
         div.tegne-container {
-            background-color: #DADAD0;
+            background-color: #EFEEE7;
             overflow: auto;
             white-space: nowrap;
-            padding: 10px;
+            padding: 15px;
             max-width: 400px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
         }
 
         div.tegne-container img {
@@ -368,6 +390,23 @@
             font-size: 23px;
         }
 
+
+        /* Main Page, HOME INFO MENU */
+
+            #home-info-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                background-color: #DADAD0;
+                margin: 5px 20px 5px 20px;
+                border-radius: 10px;
+            }
+
+
+
+        /* Slu på Main Page, HOME INFO MENU */ 
+
+
         /* START PÅ PORTFOLIO SIDE */
 
         #portfolio-tekst {
@@ -403,6 +442,7 @@
 
             #om-mig-container {
                 text-align: left;
+                font-size: 17px;
                 display: flex;
                 flex-direction: row-reverse;
                 margin: 15px 25px 15px 25px;
@@ -410,24 +450,27 @@
 
             #om-mig-container img {
                 padding-top: 15px;
-                width: 270px;
+                width: 250px;
                 height: auto;
                 border-radius: 10px;
                 margin-left: 30px;
             }
 
             div.tegne-container {
-                background-color: #DADAD0;
+                background-color: #EFEEE7;
                 overflow: auto;
                 white-space: nowrap;
                 padding: 0 15px 0 15px;
                 max-width: 1150px;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 10px;
             }
 
             div.tegne-container img {
                 padding: 10px;
-                width: 250px;
-                height: auto;
+                width: auto;
+                height: 300px;
             }
 
 
