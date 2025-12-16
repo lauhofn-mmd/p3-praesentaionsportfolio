@@ -238,15 +238,15 @@
 
     /* START PÅ OM MIG SIDE CSS */
 
-        #om-mig-container {
+        .om-mig-container {
             text-align: left;
-            font-size: 17px;
+            font-size: 16px;
             display: flex;
             flex-direction: column;
             margin: 15px 25px 15px 25px;
         }
 
-        #om-mig-container img {
+        .om-mig-container img {
             padding-top: 15px;
             width: 320px;
             height: auto;
@@ -360,7 +360,6 @@
         }
 
         .kontakt-kolonne {
-            float: center;
             width: 85%;
             padding: 20px;
         }
@@ -390,11 +389,30 @@
             padding: 15px;
         }
 
+        .main .footer-container a:link, a:visited {
+            color: #4A4B56;
+            text-decoration: none;
+        }
+
+        .main .footer-container-soMe a:hover, a:active {
+            text-decoration: underline;
+        }
+
         .main .footer-container {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            text-align: left;
         }
+
+        .footer-container-soMe {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            font-size: 13px;
+            font-weight: lighter;
+        }
+
 
     /* Start på footer*/
 
@@ -509,7 +527,6 @@
         /* START PÅ KONTAKT SIDE */
 
         .kontakt-kolonne {
-            float: center;
             width: 50%;
             margin: 15px;
         }
@@ -524,15 +541,14 @@
 
         /* START PÅ OM MIG SIDE */
 
-            #om-mig-container {
+            .om-mig-container {
                 text-align: left;
-                font-size: 17px;
+                font-size: 16px;
                 display: flex;
-                flex-direction: row-reverse;
                 margin: 15px 25px 15px 25px;
             }
 
-            #om-mig-container img {
+            .om-mig-container img {
                 padding-top: 15px;
                 width: 250px;
                 height: auto;
@@ -586,7 +602,6 @@
             .main footer {
                 text-align: center;
                 padding: 5px;
-                background-color: #DACCB6;
                 bottom: 0;
                 color: #4A4B56;
                 font-size: 13px;
@@ -594,10 +609,29 @@
                 padding: 15px;
             }
 
+            .main .footer-container a:link, a:visited {
+                color: #4A4B56;
+                text-decoration: none;
+            }
+
+            .main .footer-container-soMe a:hover, a:active {
+                text-decoration: underline;
+            }
+
             .main .footer-container {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
+                text-align: left;
+            }
+
+            .footer-container-soMe {
+                color: #4A4B56;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+                font-weight: lighter;
             }
 
 
