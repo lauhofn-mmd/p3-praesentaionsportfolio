@@ -93,13 +93,13 @@
 
         /* Cover billeder på forside */
             .main-title-pic {
-                background-image: url("img/lau-webp/lau-cover.webp");
+                background-image: url("img/lau-webp/lau-tegning-cover.webp");
                 height: 200px;
-                background-position: center;  /* Cover billede med mørk baggrund */
+                background-position: top;  /* Cover billede med mørk baggrund */
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: relative;
-                margin: 20px;
+                margin: 15px;
                 border-radius: 20px;
             }
 
@@ -192,7 +192,7 @@
 
         #portfolio-tekst {
             text-align: left;
-            margin: 15px 15px 15px 15px;
+            margin: 20px;
         }
 
         #portfolio-container { /* Selve containeren rundt om containers */
@@ -266,7 +266,7 @@
             margin-left: 20px;
             margin-right: 20px;
             border-radius: 10px;
-            max-width: 500px;
+            width: 470px;
         }
 
         div.tegne-container img {
@@ -274,6 +274,33 @@
             width: 200px;
             height: auto;
         }        
+
+
+        #toolbox-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-flow: row wrap;
+            padding: 15px;
+            gap: 10px;
+        }
+
+        #toolbox-container div {
+            background-color: #898885;
+            color: #EFEEE7;
+            border-radius: 10px;
+            width: 120px;
+            height: 130px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;  
+            font-size: 16px;
+        }
+
+        #toolbox-container img {
+            position: relative;
+            top: 25px;
+        }
 
 
 
@@ -387,9 +414,9 @@
         
 
         .main-title-pic {
-            height: 370px;
-            width: auto;
-            background-position: center;  /* Cover billede med mørk baggrund */
+            height: 330px;
+            max-width: 1200px;
+            background-position: top;  /* Cover billede med mørk baggrund */
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
@@ -398,17 +425,13 @@
         }
 
         .title-text h1 {
-            font-size: 50px;
-        }
-
-        .title-text h3 {
-            font-size: 30px;
+            font-size: 40px;
         }
 
         .title-text h3 a {
             text-decoration: none;
             color: #EFEEE7;
-            font-size: 23px;
+            font-size: 25px;
         }
 
 
@@ -437,7 +460,7 @@
 
         #portfolio-tekst {
             text-align: left;
-            margin: 25px 25px 15px 25px;
+            margin: 20px;
         }
 
         #portfolio-container {
@@ -490,7 +513,7 @@
                 margin-left: 20px;
                 margin-right: 20px;
                 border-radius: 10px;
-                max-width: 1120px;
+                width: 1120px;
             }
 
             div.tegne-container img {
@@ -499,6 +522,28 @@
                 height: 320px;
             }
 
+            #toolbox-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                flex-flow: row wrap;
+                padding: 15px;
+                gap: 10px;
+            }
+
+            #toolbox-container div {
+                background-color: #898885;
+                color: #EFEEE7;
+                border-radius: 10px;
+                width: 120px;
+                height: 130px;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;  
+                font-size: 16px;
+            }
+
+            
 
 
         /* SLUT PÅ OM MIG SIDE */
