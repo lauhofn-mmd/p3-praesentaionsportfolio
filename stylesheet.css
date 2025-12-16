@@ -163,16 +163,19 @@
         /* Tilbage Knap Style */
         .tilbage-knap a:link, a:visited{
             display: inline-block;
+            justify-content: left;
             background-color: #4A4B56;
             color: #EFEEE7;
             font-family: 'Lucida Sans';
             font-size: 14px;
-            text-align: center;
+            text-align: left;
             text-decoration: none;
             border: none;
             padding: 10px 15px;
             border-radius: 10px;
-        }
+            position: relative;
+            right: 200px;        /* Hvor knappen sidder på siden */
+        } 
 
         .tilbage-knap a:hover, a:active {
             text-decoration: underline;
@@ -600,6 +603,26 @@
 
         /* SLUT PÅ FOOTER  */
 
+
+        /* TILBAGE KNAP PÅ ALLE SIDER */
+
+            .tilbage-knap a:link, a:visited{
+                display: inline-block;
+                justify-content: left;
+                background-color: #4A4B56;
+                color: #EFEEE7;
+                font-family: 'Lucida Sans';
+                font-size: 14px;
+                text-align: left;
+                text-decoration: none;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 10px;
+                position: relative;
+                right: 520px;       /* Hvor knappen sidder på siden */
+            }
+        
+        /* TILBAGE KNAP PÅ ALLE SIDER */
 
     }
 
