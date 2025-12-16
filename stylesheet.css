@@ -12,7 +12,7 @@
 
     .menu {grid-area: menu;}   /* Erklæring af grid areas */
     .main {grid-area: main;}
-    .footer {grid-area: footer;}
+    /*.footer {grid-area: footer;}*/
 
 /* Slut på Body */
 
@@ -29,8 +29,8 @@
         display: grid;
         grid-template-areas: 
             "menu menu"      /* Hvordan tabellen er sat op i webpage */
-            "main main"      /* Forestil dig teksten i en 2x3 tabel */
-            "footer footer";
+            "main main";      /* Forestil dig teksten i en 2x3 tabel */
+            /*"footer footer";*/
         
         grid-gap: 0;   
         padding: 0; 
@@ -266,7 +266,7 @@
             margin-left: 20px;
             margin-right: 20px;
             border-radius: 10px;
-            width: 470px;
+            width: 475px;
         }
 
         div.tegne-container img {
@@ -319,13 +319,14 @@
 
 
         input[type=text], select, textarea {
-            width: 99%;
+            width: 100%;
             padding: 15px;
             border: 1px solid #DADAD0;
             margin-top: 5px;
             margin-bottom: 15px;
             resize: vertical;
         }
+
 
         input[type=submit] {   /* Knappen til Send Besked i kontakt formular */
             background-color: #4A4B56;
@@ -343,6 +344,10 @@
         input[type=submit]:hover {
             text-decoration: underline;
         }   
+
+        #send-knap {
+            margin-top: 20px;
+        }
         
 
         #kontakt-formular:after {  /* Clear floats after the columns - UNDERSØG HVAD DET BETYDER*/  
@@ -351,7 +356,19 @@
             clear: both;
         }
 
+        .kontakt-kolonne {
+            float: center;
+            width: 85%;
+            padding: 20px;
+        }
 
+        #besked-emne {
+            width: 500px;
+        }
+
+        #send-knap {
+            margin-top: 20px;
+        }
 
 
     /* SLUT PÅ OM KONTAKT SIDE CSS */
@@ -359,18 +376,30 @@
 
     /* Start på footer*/
 
-        .footer {
-            background-color: #CDB793;
-            color: #EFEEE7;
+        .main footer {
+            text-align: center;
+            padding: 5px;
+            background-color: #DACCB6;
             bottom: 0;
-            position: fixed;
-            height: 30px;
+            color: #4A4B56;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        .main .footer-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
 
     /* Start på footer*/
 
 
 /* Grid container */
+
+
+
 
 
 /* Media Query for PC Skærm */
@@ -477,10 +506,13 @@
         /* START PÅ KONTAKT SIDE */
 
         .kontakt-kolonne {
-            float: left;
+            float: center;
             width: 50%;
-            margin-top: 6px;
-            padding: 20px;
+            margin: 15px;
+        }
+
+        #besked-emne {
+            width: 635px;
         }
 
 
@@ -513,7 +545,7 @@
                 margin-left: 20px;
                 margin-right: 20px;
                 border-radius: 10px;
-                width: 1120px;
+                width: 1135px;
             }
 
             div.tegne-container img {
@@ -543,10 +575,30 @@
                 font-size: 16px;
             }
 
-            
-
-
         /* SLUT PÅ OM MIG SIDE */
+
+
+        /* START PÅ FOOTER */
+
+            .main footer {
+                text-align: center;
+                padding: 5px;
+                background-color: #DACCB6;
+                bottom: 0;
+                color: #4A4B56;
+                font-size: 13px;
+                font-weight: bold;
+                padding: 15px;
+            }
+
+            .main .footer-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+
+        /* SLUT PÅ FOOTER  */
 
 
     }
