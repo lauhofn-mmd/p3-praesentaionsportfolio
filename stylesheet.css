@@ -187,7 +187,7 @@
             padding: 10px 15px;
             border-radius: 10px;
             position: relative;
-            right: 200px;        /* Hvor knappen sidder på siden */
+            right: 150px;        /* Hvor knappen sidder på siden */
         } 
 
         .tilbage-knap a:hover, a:active {
@@ -282,7 +282,7 @@
             margin-left: 20px;
             margin-right: 20px;
             border-radius: 10px;
-            width: 475px;
+            width: 370px;
         }
 
         div.tegne-container img {
@@ -336,7 +336,7 @@
         }
 
 
-        input[type=text], select, textarea {
+        input[type=text], textarea {
             width: 100%;
             padding: 15px;
             border: 1px solid #DADAD0;
@@ -368,23 +368,24 @@
         }
         
 
-        #kontakt-formular:after {  /* Clear floats after the columns - UNDERSØG HVAD DET BETYDER*/  
+        #kontakt-formular:after {  /*  */ 
             content: "";
             display: table;
             clear: both;
         }
 
         .kontakt-kolonne {
-            width: 85%;
+            width: 80%;
             padding: 20px;
         }
 
         #besked-emne {
-            width: 500px;
+            width: 370px;
         }
 
         #send-knap {
             margin-top: 20px;
+            margin: auto;
         }
 
 
@@ -435,7 +436,7 @@
 
 /* Media Query for PC Skærm */
 
-    @media (min-width: 600px) {
+    @media (min-width: 550px) {
         .grid-container {
             grid-template-areas: 
             "menu main"          /* Hvordan tabellen er sat op i webpage */
