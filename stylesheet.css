@@ -187,13 +187,38 @@
             padding: 10px 15px;
             border-radius: 10px;
             position: relative;
-            right: 150px;        /* Hvor knappen sidder på siden */
+            right: 130px;        /* Hvor knappen sidder på siden */
         } 
 
         .tilbage-knap a:hover, a:active {
             text-decoration: underline;
         }
         /* Tilbage Knap Style */
+
+
+        /* start på LÆS MERE KNAP */
+
+            .mere-knap a:link, a:visited{
+                display: inline-block;
+                justify-content: left;
+                background-color: #4A4B56;
+                color: #EFEEE7;
+                font-family: 'Lucida Sans';
+                font-size: 14px;
+                text-align: left;
+                text-decoration: none;
+                border: none;
+                padding: 10px 10px;
+                border-radius: 5px;
+                margin: 0 auto 15px 30px;
+            } 
+
+            .mere-knap a:hover, a:active {
+                text-decoration: underline;
+            }
+
+
+        /* Slut på LÆS MERE KNAP */
 
         
 
@@ -282,7 +307,7 @@
             margin-left: 20px;
             margin-right: 20px;
             border-radius: 10px;
-            width: 370px;
+            width: 345px;
         }
 
         div.tegne-container img {
@@ -433,6 +458,50 @@
 
 
 
+        /* ----- UNDERSIDER TIL PORTFOLIO ----- */
+
+        /* UX design */
+
+            div.galleri {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            }
+
+            div.galleri-item {
+            margin: 5px;
+            border: 1px solid #EFEEE7;
+            
+            }
+
+            div.galleri-item:hover {
+            border: 1px solid #4A4B56;
+            }
+
+            div.galleri-item img {
+            width: 360px;
+            height: auto;
+            }
+
+            div.galleri-item div.desc {
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            }
+
+            div.galleri-item video {
+                width: 360px;
+                height: auto;
+            }
+
+        /* UX design */ 
+
+
+        /* ----- UNDERSIDER TIL PORTFOLIO ----- */
+
+
+
+
 
 /* Media Query for PC Skærm */
 
@@ -549,6 +618,29 @@
             gap: 15px;
             margin: 15px;
         }
+
+
+            /* UNDERSIDER I PORTFOLIO */
+
+                div.galleri {
+                    display: flex;
+                    flex-direction: ROW;
+                    margin: 20px;
+                    flex-wrap: wrap;
+                }
+
+                div.galleri-item img {
+                    width: 400px;
+                    height: auto;
+                }
+
+                div.galleri-item video {
+                    width: 600px;
+                    height: auto;
+                }
+
+
+            /* SLUT PÅ UNDERSIDER I PORTFOLIO */
 
 
         /* SLUT PÅ PORTFOLIO SIDE */
